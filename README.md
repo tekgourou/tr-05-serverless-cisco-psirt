@@ -75,6 +75,11 @@ pip install --upgrade --requirement requirements.txt
 
 ### AWS Lambda Function
 
+First set up your deployment settings for you with the following command:
+```
+zappa init
+```
+
 To `deploy` your application to AWS as a Lambda function for the first time,
 run the following command:
 ```
