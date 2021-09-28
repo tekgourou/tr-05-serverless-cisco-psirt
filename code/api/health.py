@@ -1,7 +1,7 @@
 from flask import Blueprint
 import json
-from relay_module.api import get_jwt, jsonify_data
-from relay_module.api import get_cisco_cloudsso_token
+from code.api import get_jwt, jsonify_data
+from code.api import get_cisco_cloudsso_token
 health_api = Blueprint('health', __name__)
 
 

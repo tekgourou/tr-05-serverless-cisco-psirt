@@ -1,10 +1,10 @@
 from flask import Flask, jsonify
 
-from relay_module.api import dashboard_api
-from relay_module.api import health_api
-from relay_module.api import version_api
-from relay_module.api import TRFormattedError
-from relay_module.api import jsonify_errors
+from code.api import dashboard_api
+from code.api import health_api
+from code.api import version_api
+from code.api import TRFormattedError
+from code.api import jsonify_errors
 
 app = Flask(__name__)
 

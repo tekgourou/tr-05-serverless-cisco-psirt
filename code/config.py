@@ -1,4 +1,4 @@
-from relay_module.__version__ import VERSION
+from code.__version__ import VERSION
 
 
 class Config:

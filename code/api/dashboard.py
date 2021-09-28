@@ -1,9 +1,9 @@
 from flask import Blueprint
 from datetime import datetime, timedelta
 from functools import partial
-from relay_module.api import DashboardTileSchema, DashboardTileDataSchema
-from relay_module.api import jsonify_data, get_jwt, get_json
-from relay_module.api import build_advisory_data
+from code.api import DashboardTileSchema, DashboardTileDataSchema
+from code.api import jsonify_data, get_jwt, get_json
+from code.api import build_advisory_data
 
 dashboard_api = Blueprint('dashboard', __name__)
 get_dashboardtile_form_params = partial(get_json, schema=DashboardTileSchema())

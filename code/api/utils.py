@@ -3,7 +3,7 @@ import jwt
 from jwt import PyJWKClient
 from authlib.jose.errors import DecodeError, BadSignatureError
 from flask import request, jsonify
-from relay_module.api import AuthorizationError, InvalidArgumentError
+from code.api import AuthorizationError, InvalidArgumentError
 
 def format_docs(docs):
     return {'count': len(docs), 'docs': docs}
