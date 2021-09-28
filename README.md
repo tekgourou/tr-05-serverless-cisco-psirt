@@ -153,7 +153,7 @@ Now after a page refresh in your Cisco SecureX `Available Integration Modules` y
 
 ![image](img/securex_module.png)
 
-Add your Cisco PSIRT API key and client_secret from Step 3 and URL from Step 2.
+Add your Cisco PSIRT API key and client_secret from Step 3 and URL from Step 2 and click `Save`.
 
 ![image](img/securex_module_config.png)
 
