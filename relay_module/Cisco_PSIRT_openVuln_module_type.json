@@ -1,0 +1,58 @@
+{
+    "title": "Cisco PSIRT openVuln",
+    "default_name": "Cisco PSIRT openVuln",
+    "short_description": "Cisco Product Security Incident Response Team (PSIRT) open Vulnerabilities and Exposure (CVE)",
+    "description": "The Cisco Product Security Incident Response Team (PSIRT) is a dedicated, global team that manages the receipt, investigation, and public reporting of security vulnerability information that is related to Cisco products and networks. Assigning Common Vulnerabilities and Exposure (CVE) identifiers to internally and externally found vulnerabilities across hundreds of products reflects Cisco’s commitment to transparency and helping customers mitigate risk. PSIRT investigates all reports, regardless of the Cisco software code version, through the last day of support for a given product. Issues will be prioritized based on the potential severity of the vulnerability and other environmental factors. Ultimately, the resolution of a reported incident may require upgrades to products that are under active support from Cisco. ",
+    "tips": "Sign-into the API Console (https://apiconsole.cisco.com/) with your Cisco.com ID. Registered Cisco.com user accounts are granted access to the API. These API users are then empowered to register unique application integration instances, generate API tokens, and start making API requests to retrieve information about Cisco security vulnerabilities.\n",
+    "external_references": [
+        {
+            "label": "Contact Us",
+            "link": "psirt@cisco.com"
+        }
+    ],
+    "configuration_spec": [
+        {
+            "key": "custom_psirt_client_id",
+            "type": "string",
+            "label": "Cisco PSIRT openVuln API key",
+            "required": true
+        },
+        {
+            "key": "custom_psirt_client_secret",
+            "type": "password",
+            "label": "Cisco PSIRT openVuln API client_secret",
+            "required": true
+        },
+        {
+            "key": "url",
+            "type": "string",
+            "label": "Serverless URL",
+            "required": true
+        }
+    ],
+    "capabilities": [
+        {
+            "id": "health",
+            "description": "Healt of the relay module and PSIRT API"
+        },
+        {
+            "id": "tiles",
+            "description": "CVE informations"
+        }
+    ],
+    "properties": {
+        "supported-apis": [
+            "health",
+            "tiles",
+            "tiles/tile-data"
+        ],
+        "auth-type": "configuration-token",
+        "configuration-token-alg": "RS256",
+        "configuration-token-audience": "https://securex.us.security.cisco.com",
+        "custom_jwks_host": "visibility.amp.cisco.com"
+    },
+    "flags": [
+        ""
+    ],
+    "logo": "data:image/png;base64,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"
+}
