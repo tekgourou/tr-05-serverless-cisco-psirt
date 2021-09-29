@@ -65,7 +65,7 @@ a previously activated virtual environment by simply typing `deactivate` in
 your command-line shell.
 
 Finally, install the libraries required for the application to function from
-the [requirements.txt](relay_module/requirements.txt) file:
+the [requirements.txt](code/requirements.txt) file:
 
 ```
 pip install --upgrade --requirement requirements.txt
@@ -133,7 +133,7 @@ The Cisco PSIRT openVuln API applications require an API "access token" in order
 
 ## Step 4: Installing the relay module
 
-Browser to [The SecureX module maker](https://ciscosecurity.github.io/tr-05-module-maker/) and open the JSON [Cisco_PSIRT_openVuln_module_type.json](relay_module/Cisco_PSIRT_openVuln_module_type.json) from this githubby clicking on `Open JSON from File`.
+Browser to [The SecureX module maker](https://ciscosecurity.github.io/tr-05-module-maker/) and open the JSON [Cisco_PSIRT_openVuln_module_type.json](code/Cisco_PSIRT_openVuln_module_type.json) from this githubby clicking on `Open JSON from File`.
 
 ![image](img/upload_json.png)
 
@@ -159,7 +159,7 @@ Add your Cisco PSIRT API key and client_secret from Step 3 and URL from Step 2 a
 
 ## Step 5: Adding tile to dashboard
 
-You can create a new doashboard or add the new tile to a existing one.
+You can create a new doashboard `+ Create Dashboard` or add the new tile to a existing one and click on `Save`.
 
 ![image](img/dashboard_config.png)
 
