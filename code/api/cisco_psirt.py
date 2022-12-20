@@ -10,7 +10,7 @@ def get_cisco_cloudsso_token(client_id, client_secret):
 
 def build_advisory_data(client_id, client_secret):
     token = json.loads(get_cisco_cloudsso_token(client_id, client_secret))['access_token']
-    url = "https://api.cisco.com/security/advisories/cvrf/latest/25"
+    url = "https://api.cisco.com/security/advisories/v2/latest/25"
     payload = {}
     headers = {'Authorization': 'Bearer {}'.format(token)}
     response = json.loads(requests.request("GET", url, headers=headers, data=payload).text)
